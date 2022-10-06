@@ -1,0 +1,97 @@
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~
+$ mkdir Project_dir
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~
+$ cd Project_dir
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~/Project_dir
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Project_dir/.git/
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~/Project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        INDEX.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~/Project_dir (master)
+$ git add INDEX.txt
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~/Project_dir (master)
+$ git commit -m 'file 1'
+[master (root-commit) 382e5c8] file 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 INDEX.txt
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~/Project_dir (master)
+$ git log
+commit 382e5c8730504beb45d2c57feb0be0beb04e5dc3 (HEAD -> master)
+Author: unknown <aashup999@gmail.com>
+Date:   Thu Oct 6 19:59:16 2022 +0530
+
+    file 1
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~/Project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   INDEX.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~/Project_dir (master)
+$ git checkout --INDEX.txt
+error: unknown option `INDEX.txt'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge, diff3, or zdiff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~/Project_dir (master)
+$ git check out -- INDEX.txt
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~/Project_dir (master)
+$ git checkout -- INDEX.txt
+
+Lenovo@LAPTOP-HSO1HR36 MINGW64 ~/Project_dir (master)
+$
